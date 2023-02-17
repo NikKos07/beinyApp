@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/parentFrag"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.logreg.fragments.LoginFragment">
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/login_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:text="Beiny"
+        android:textColor="@color/title"
+        android:textSize="48sp"
+        app:fontFamily="@font/pristina"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:id="@+id/login_linear1"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/login_tv_title"
+
+        >
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/login_tv_linear1_title"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Вход в аккаунт"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            />
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/login_tv_linear1_layout_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+
+
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/login_tv_linear1_edittext_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Введите почту или телефон"
+
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/login_tv_linear1_layout_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            app:endIconMode="custom"
+            app:endIconDrawable="@drawable/ico_hidepass"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/login_tv_linear1_edittext_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Пароль"
+                android:inputType="textPassword"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/login_tv_linear1_fgpass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Забыли пароль?"
+            android:textColor="@color/additional"
+            android:textSize="12sp"
+            android:layout_gravity="end"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/login_linear1_btn_enter"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginTop="14dp"
+            android:text="Вход"
+            app:cornerRadius="14dp"
+            app:backgroundTint="@null"
+            android:background="@drawable/btn_background_gradient_fill"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/login_linear1_btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="14dp"
+            app:cornerRadius="14dp"
+            android:textColor="@color/additional"
+            app:backgroundTint="@null"
+            android:background="@drawable/btn_background_gradient"
+            android:text="Регистрация"
+            />
+
+
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

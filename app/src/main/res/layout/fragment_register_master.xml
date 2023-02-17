@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.logreg.fragments.RegisterMasterFrgamnet">
+
+    <LinearLayout
+        android:id="@+id/login_linear1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/registercli_tv_linear1_title"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="84dp"
+            android:text="Регистрация"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/registermas_tv_linear1_layout_login"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="68dp">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/registermas_tv_linear1_edittext_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Введите почту или телефон" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/registermas_tv_linear1_layout_password"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp">
+
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/registermas_tv_linear1_edittext_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Пароль"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/registermas_tv_linear1_layout_mobile"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp">
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/registermas_tv_linear1_edittext_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Телефон" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/registermas_tv_linear1_layout_age"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp">
+
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/registermas_tv_linear1_edittext_age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Возраст" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/registermas_linear1_btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginTop="54dp"
+            android:layout_marginBottom="14dp"
+            android:background="@drawable/btn_background_gradient_fill"
+            android:text="Зарегистрироваться"
+            app:backgroundTint="@null"
+            app:cornerRadius="14dp" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
