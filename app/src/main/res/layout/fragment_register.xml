@@ -9,7 +9,7 @@
 
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/reg_btn_master"
+        android:id="@+id/reg_btn_client"
         android:layout_width="184dp"
         android:layout_height="184dp"
         android:text="КЛИЕНТ"
@@ -17,12 +17,12 @@
         app:backgroundTint="@null"
         android:background="@drawable/btn_background_gradient_fill"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/reg_btn_client"
+        app:layout_constraintEnd_toStartOf="@+id/reg_btn_master"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/reg_btn_client"
+        android:id="@+id/reg_btn_master"
         android:layout_width="184dp"
         android:layout_height="184dp"
         android:textSize="24sp"
@@ -31,7 +31,7 @@
         android:text="МАСТЕР"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/reg_btn_master"
+        app:layout_constraintStart_toEndOf="@+id/reg_btn_client"
         app:layout_constraintTop_toTopOf="parent" />
 
 

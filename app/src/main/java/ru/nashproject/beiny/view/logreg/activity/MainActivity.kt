@@ -36,4 +36,9 @@ class MainActivity : AppCompatActivity() {
     }
         return super.dispatchTouchEvent(ev)
 }
+
+
+    companion object{
+        const val BASE_URL="http://192.168.7.62:8080"
+    }
 }
