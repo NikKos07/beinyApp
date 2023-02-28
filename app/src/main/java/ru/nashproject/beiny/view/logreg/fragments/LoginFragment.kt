@@ -54,8 +54,10 @@ private lateinit var binding: FragmentLoginBinding
         val info = serviceBeinyApi.getMastersList()
             .subscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread())
-            .subscribe()
-        Log.d("MyLog",info.toString())
+            .subscribe {
+                Log.d("MyLog", it.toString())
+            }
+
     }
 
     companion object {
