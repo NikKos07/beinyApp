@@ -37,7 +37,7 @@
                 android:id="@+id/registercli_tv_linear1_edittext_login"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Введите почту или телефон" />
+                android:hint="Введите почту" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -63,7 +63,8 @@
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="18dp">
+                android:layout_marginTop="18dp"
+                app:prefixText="+7">
 
                 >
 
@@ -71,7 +72,8 @@
                     android:id="@+id/registercli_tv_linear1_edittext_mobile"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Телефон" />
+                    android:hint="Телефон"
+                    />
 
             </com.google.android.material.textfield.TextInputLayout>
 

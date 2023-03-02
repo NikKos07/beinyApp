@@ -23,7 +23,7 @@ private lateinit var binding: FragmentLoginBinding
         binding = FragmentLoginBinding.inflate(layoutInflater)
 
         moveRegister()
-
+getData()
         return binding.root
 
 
@@ -32,12 +32,11 @@ private lateinit var binding: FragmentLoginBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        getData()
+
 
 
 
     }
-
 
    private fun moveRegister(){
         binding.loginLinear1BtnRegister.setOnClickListener{
